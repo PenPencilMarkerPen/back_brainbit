@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 10px;
+  font-family: "Rethink Sans", sans-serif !important;
+}
+/* FF6384 */
+.header_wrapper {
+  padding: 20px 0;
+}
+.header_wrapper ul {
+  display: flex;
+  column-gap: 30px;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+}
+.header_wrapper ul a,
+.nav_wrapper ul a,
+.error a {
+  font-family: "Rethink Sans", sans-serif;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 5px;
+  border: 3px solid #0a7a74;
+  color: black;
+  transition: 0.5s all;
+}
+
+.header_wrapper ul a:hover,
+.custom_submit input:hover,
+.nav_wrapper ul a:hover,
+.item_list_links a:hover,
+.error a:hover {
+  background-color: #0a7873;
+}
+
+/* DEPARTMENTS  */
+h1 {
+  font-family: "Rethink Sans", sans-serif;
+  font-size: 40px;
+  text-align: center;
+}
+.custom_input label {
+  font-family: "Rethink Sans", sans-serif;
+  font-size: 25px;
+  color: black;
+  padding-bottom: 5px;
+}
+.custom_input input {
+  font-size: 25px;
+  border: 3px solid #0a7a74;
+  /* outline: none; */
+  padding: 4px;
+  margin-top: 10px;
+}
+.custom_input + .custom_input {
+  margin-top: 10px;
+}
+.custom_submit input,
+.custom_submit button {
+  margin-top: 10px;
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+  background-color: #ffffff;
+  border: 3px solid #0a7a74;
+  font-size: 25px;
+  transition: 0.5s all;
+}
+
+/* #DEPARTSMENT */
+.nav_wrapper ul {
+  display: flex;
+  flex-direction: column;
+}
+.nav_wrapper ul li {
+  margin-top: 20px;
+}
+.nav_wrapper ul li a {
+  display: block;
+  text-align: center;
+  width: 150px;
+}
+.form_to_nav {
+  justify-content: space-between;
+  display: flex;
+}
+
+/* EMPLOYEE */
+.custom_select {
+  font-size: 25px;
+  border: 3px solid #0a7a74;
+  outline: none;
+  padding: 4px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* DEPARTMENT LIST  */
+.list_and_graph {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+.list {
+  flex: 1.5;
+}
+.graph {
+  flex: 1;
+}
+.item_list {
+  border: 3px solid #0a7a74;
+  padding: 10px;
+  font-size: 25px;
+  margin-top: 30px;
+}
+.item_list + .item_list {
+  margin-top: 30px;
+}
+.item_list_links {
+  margin-top: 10px;
+}
+.item_list_links a {
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+  border: 3px solid #0a7a74;
+  transition: 0.5s all;
+  font-family: "Rethink Sans", sans-serif !important;
+  padding: 2px;
+  font-weight: 600;
+}
+
+.profile_container p {
+  margin-top: 30px;
+  font-size: 40px;
+}
+
+.session_info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+.info {
+  padding: 10px;
+  border: 3px solid #0a7a74;
+}
+.session_name {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+strong {
+  font-weight: 700;
+}
+/* ADAPTIV */
+@media (max-width: 1000px) {
+  /* … */
+  .container {
+    margin: 0 10px;
+  }
+  .header_wrapper ul a,
+  .nav_wrapper ul a {
+    font-size: 15px;
+    padding: 2px;
+    border: 2px solid #0a7a74;
+  }
+  .header_wrapper ul {
+    column-gap: 10px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .custom_input label {
+    font-size: 15px;
+  }
+  .custom_input input,
+  .custom_select {
+    font-size: 15px;
+    border: 2px solid #0a7a74;
+  }
+  .custom_submit input,
+  .item_list {
+    font-size: 15px;
+    border: 2px solid #0a7a74;
+  }
+  .item_list_links a {
+    font-size: 10px;
+    border: 1px solid #0a7a74;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 600px) {
+  .header_wrapper ul {
+    flex-wrap: wrap;
+  }
+  .header_wrapper ul li {
+    margin-bottom: 20px;
+  }
+  .list_and_graph {
+    flex-direction: column;
+  }
+  .list,
+  .form {
+    order: 1;
+  }
+  .graph,
+  .nav {
+    order: 0;
+  }
+  .nav {
+    margin-bottom: 20px;
+  }
+  .form_to_nav {
+    flex-direction: column;
+  }
+}
+.error {
+  font-size: 25px;
+}
+.error {
+  padding-top: 40px;
+  max-width: 60px;
+  margin: 0 auto;
+}

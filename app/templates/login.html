@@ -1,0 +1,23 @@
+{% extends "base.html" %} {% block content %}
+<h1>Аутентификация</h1>
+<div class="form_to_nav">
+  <div class="form">
+    <form action="" method="post" novalidate>
+      {{ form.hidden_tag() }}
+      <div class="custom_input">
+        {{ form.username.label }}<br />
+        {{ form.username(size=32) }}
+      </div>
+      <div class="custom_input">
+        {{ form.password.label }}<br />
+        {{ form.password(size=32) }}
+      </div>
+      <div class="custom_input">
+        {{ form.remember_me() }} {{ form.remember_me.label }}
+      </div>
+      <div class="custom_submit">{{ form.submit() }}</div>
+    </form>
+  </div>
+</div>
+
+{% endblock %}

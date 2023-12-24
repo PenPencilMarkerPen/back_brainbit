@@ -1,0 +1,16 @@
+{
+  "email": "email",
+  "survey": 10,
+  "statistic": [
+    { "date": "1703290299", "positive": "14", "negative": "86" },
+    { "date": "1703290299", "positive": "40", "negative": "60" },
+    { "date": "1703290299", "positive": "21", "negative": "79" },
+    { "date": "1703290299", "positive": "57", "negative": "43" },
+    { "date": "1703290299", "positive": "25", "negative": "75" },
+    { "date": "1703290299", "positive": "12", "negative": "88" },
+    { "date": "1703290299", "positive": "82", "negative": "18" },
+    { "date": "1703290299", "positive": "40", "negative": "60" },
+    { "date": "1703290299", "positive": "2", "negative": "98" },
+    { "date": "1703290299", "positive": "35", "negative": "65" }
+  ]
+}
